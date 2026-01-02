@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="header">
+    <nav class="nav1">
+      <a href="index.html"><img src="imagges/eduford_img/logo.png" alt="University logo"></a>
+
+      <div class="nav-links" id="navlinks">
+        <i class="fa fa-times close-icon" role="button" aria-label="Close menu" tabindex="0" aria-hidden="true" onclick="hidemenu()"></i>
+        <ul>
+          <li class="lis"><a href="index.html">HOME</a></li>
+          <li class="lis"><a href="about.html">ABOUT</a></li>
+          <li class="lis"><a href="courses.html">COURSES</a></li>
+          <li class="lis"><a href="blog.html">BLOG</a></li>
+          <li class="lis"><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <i class="fa fa-bars menu-icon" role="button" aria-label="Open menu" tabindex="0" aria-hidden="true" onclick="showmenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1 class="heading1">World's Biggest University</h1>
+      <p class="para1">Discover the world's largest university and explore our diverse range of courses and programs.</p>
+
+      <button class="btn1"><a class="btn1-content" href="about.html">Know More</a></button>
+      <button onclick="alert('thanks for your interest....')" class="btn2">Enroll Now</button>
+    </div>
+  </section>
+
+
+  <section class="courses">
+    <h1 class="heading2">Popular Courses</h1>
+    <p class="para2">Explore our most popular courses designed to help you achieve your academic and career goals.</p>
+    <div class="block2">
+        <div class="block2column">
+            <h1 class="heading2">Intermediate</h1>
+            <p1 class="para2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere optio quo sint, excepturi neque assumenda voluptatem! Esse quo beatae ratione. Accusamus nesciunt ipsum cumque aspernatur atque ex sed unde consequuntur.</p1>
+        </div>
+         <div class="block2column">
+            <h1 class="heading2">Post Graduation</h1>
+            <p1 class="para2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere optio quo sint, excepturi neque assumenda voluptatem! Esse quo beatae ratione. Accusamus nesciunt ipsum cumque aspernatur atque ex sed unde consequuntur.</p1>
+        </div>
+         <div class="block2column">
+            <h1 class="heading2">Degree</h1>
+            <p1 class="para2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere optio quo sint, excepturi neque assumenda voluptatem! Esse quo beatae ratione. Accusamus nesciunt ipsum cumque aspernatur atque ex sed unde consequuntur.</p1>
+        </div>
+        
+        
+        
+    </div>
+
+    
+
+  </section>
+
+
+
+
+
+  <Section class="campus">
+    <h1 style="color:black;"> Our Global campus</h1>
+    <p2 style="color:black;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt culpa voluptatibus odit similique veli</p2>
+
+    <div class="row">
+      <div class="campus-column">
+          <img src="imagges/eduford_img/london.png" class="campusimg">
+          <div class="layer">
+            <h3>London Campus</h3>
+          </div>
+          
+
+        
+      </div>
+      
+      <div class="campus-column">
+          <img src="imagges/eduford_img/newyork.png" class="campusimg">
+
+        
+      </div>
+      <div class="campus-column">
+          <img src="imagges/eduford_img/washington.png" class="campusimg">
+      </div>
+
+    </div>
+
+
+
+
+
+  </Section>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showmenu() {
+      navlinks.style.right = "0";
+    }
+
+    function hidemenu() {
+      navlinks.style.right = "-200px";
+    }
+  </script>
+
+
+
+
+</body>
+</html>

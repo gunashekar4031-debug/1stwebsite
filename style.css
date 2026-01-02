@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ===== Global Reset ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  color:white;
+}
+
+/* ===== Header / Hero Section ===== */
+.header{
+  min-height:100vh;
+  width:100%;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,.7)),url("imagges/eduford_img/banner.png");
+  background-position:center;
+  background-size:cover;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+}
+
+/* ===== Navbar ===== */
+.nav1{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 5%;
+}
+
+.nav-links{
+  flex:1;
+  text-align:right;
+}
+
+.nav-links ul{
+  margin:0;
+  padding:0;
+}
+
+.nav-links ul li{
+  list-style:none;
+  display:inline-block;
+  padding:8px 12px;
+}
+
+.nav-links ul li a{
+  font-family:"Poppins", sans-serif;
+  font-weight:600;
+  text-decoration:none;
+  transition: color .2s, opacity .2s;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a:focus{
+  color:cyan;
+  opacity:.7;
+}
+
+/* ===== Hero Text Content ===== */
+.text-box{
+  width:90%;
+  max-width:900px;
+  margin:120px auto 0 auto;
+  text-align:center;
+  height:auto;
+}
+
+.heading1{
+  font-size:45px;
+}
+
+.para1{
+  font-size:14px;
+  margin-top:10px;
+}
+
+/* ===== Buttons (Responsive + No Absolute) ===== */
+.btn1, .btn2{
+  background-color:rgba(0,102,204,.8);
+  padding:12px 18px;
+  border:none;
+  border-radius:15px;
+  cursor:pointer;
+  display:inline-block;
+  margin:10px 8px;
+  height:auto;
+  width:auto;
+  transition: background-color .2s, border .2s;
+}
+
+.btn1:hover,
+.btn2:hover{
+  background-color:rgba(0,102,204,.3);
+  border:2px solid white;
+}
+
+/* inline-link inside button (optional styling) */
+.btn1-content{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* Hide menu / close icons on desktop */
+.menu-icon,
+.close-icon{
+  display:none;
+  opacity:0;
+  pointer-events:none;
+  transition: opacity .15s;
+}
+.row{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+
+
+}
+
+
+.campusimg{
+ 
+  border-radius:8px;
+  width:320px;
+  height:480px;
+  margin-right:12px;
+
+
+
+}
+.campusimg:hover{
+  transform: scale(0.899);
+  transition: 0.5s;
+}
+
+
+.campus{
+  text-align:center;
+  margin:auto;
+  padding:15px;
+  margin-top:30px;
+
+}
+.block2{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  margin:20px 20px;
+  padding:12px;
+  
+}
+.block2column{
+  background-color:#FFE4EC;
+  border-radius:15px;
+  border-width:linear-gradient(45deg, #FF6B91, #FF3D68);
+  box-shadow:0 4px 8px rgba(0,0,0,0.2);
+
+  height:auto;
+  width:45vh;
+  margin:20px;
+  padding:9px;
+  color:white;
+  
+}
+.block2column:hover{
+  transition:1s;
+  background-color:#FFE4EC;
+  border-radius:15px;
+  transform:scale(1.1);
+  filter:brightness(1.2);
+    box-shadow:
+    0 0 12px rgba(255, 200, 255, .6),
+    0 0 24px rgba(255, 180, 220, .5),
+    0 10px 28px rgba(0,0,0,.15);
+}
+
+
+
+
+.courses{
+  margin-top:100px;
+  padding:12px;
+  text-align:center;
+}
+.heading2{
+  text-align:center;
+  margin-bottom:10px;
+  color:black;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+}
+.para2{
+  color:black;
+  font-family: Poppins, sans-serif;
+}
+
+
+/* Mobile / responsive rules */
+@media (max-width:700px){
+  .heading1{
+    font-size:32px;
+  }
+
+  .para1{
+    font-size:12px;
+  }
+
+  .nav-links ul li{
+    display:block;
+  }
+
+  /* Show icons on mobile */
+  .menu-icon,
+  .close-icon{
+    display:block;
+    opacity:1;
+    pointer-events:auto;
+    color:white;
+    margin:10px;
+    cursor:pointer;
+    font-size:30px;
+  }
+
+  .nav-links{
+    position:absolute;
+    background:linear-gradient(180deg,rgba(12,25,55,0.9),rgba(5,15,35,0.9));
+    top:0;
+    right:-200px;
+    height:100vh;
+    width:200px;
+    text-align:left;
+    z-index:2;
+    transition:2s;
+    display:flex;
+    flex-direction:column;
+    padding:8px;
+    
+  
+
+  }
+  .block2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .row{
+    flex-direction: column;
+  }
+
+  
+}
